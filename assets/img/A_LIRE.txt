@@ -1,0 +1,23 @@
+IMAGES À DÉPOSER ICI (le site fonctionne sans elles : un visuel technique de repli s'affiche)
+
+Racine assets/img/
+  hero-ingenieurs.jpg        1920x1080  Hero — ingénieurs / installation industrielle
+  entreprise-equipe.jpg      1000x1200  Équipe technique sur site
+  electricite-technicien.jpg 1000x1200  Maintenance électrique
+  batiment-industriel.jpg    1000x1200  Site industriel / usine
+  coffret-armoire.jpg        1000x1200  Armoire ou coffret câblé
+  reseau-cablage.jpg         1000x1200  Baie de brassage / câblage réseau
+  solaire-panneaux.jpg       1000x1200  Panneaux photovoltaïques
+  groupe-electrogene.jpg     1000x1200  Groupe électrogène
+  videosurveillance.jpg      1000x1200  Caméra de surveillance
+  btp-chantier.jpg           1000x1200  Chantier BTP
+  formation-technique.jpg    1000x1200  Session de formation
+  og-cover.jpg               1200x630   Aperçu réseaux sociaux
+  apple-touch-icon.png       180x180    Icône iOS
+
+Dossier assets/img/realisations/
+  r1.jpg ... r8.jpg          1200x900   Photos de chantier (ratio 4:3)
+
+Conseils : exporter en WebP quand c'est possible (garder l'extension dans le HTML
+si vous changez de format), viser moins de 250 Ko par image, et toujours
+renseigner l'attribut alt correspondant au contenu réel de la photo.

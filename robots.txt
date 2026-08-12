@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/img/tmp/
+
+Sitemap: https://www.hubtech-industrie.com/sitemap.xml
