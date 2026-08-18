@@ -32,7 +32,7 @@
   "description":"Solutions électriques, industrielles, énergétiques, technologiques et BTP : installation et maintenance électrique, énergie solaire, groupes électrogènes, vidéosurveillance, construction réseau, vente de matériel électrique, formation et conseil.",
   "url":"https://www.hubtech-industrie.com/",
   "telephone":"+237651735628",
-  "email":"Prestations@hubtech_industrie.com",
+  "email":"prestations@hubtechindustrie.com",
   "image":"https://www.hubtech-industrie.com/assets/img/og-cover.jpg",
   "address":{"@type":"PostalAddress","addressCountry":"CM","addressLocality":"Douala","addressRegion":"Littoral"},
   "areaServed":"CM","priceRange":"$$",
@@ -361,6 +361,19 @@ p{margin:0 0 1em}
 .infoblock dd{margin:0;color:#fff;font-size:15.5px;word-break:break-word}
 .infoblock dd a:hover{color:var(--yellow)}
 .infoblock .btn{width:100%;margin-top:28px}
+.commcard{margin-top:26px;padding:18px 20px;background:rgba(255,209,66,.12);border:1px solid rgba(255,209,66,.35);border-radius:var(--r)}
+.commcard__label{display:block;font-family:var(--display);font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--yellow);margin-bottom:10px}
+.commcard__tel{display:flex;align-items:center;gap:10px;color:#fff;font-family:var(--display);font-size:20px;font-weight:700;text-decoration:none;transition:.2s var(--ease)}
+.commcard__tel svg{width:22px;height:22px;fill:var(--yellow);flex:none}
+.commcard__tel:hover{color:var(--yellow);transform:translateX(3px)}
+.commcard__mail{display:block;margin-top:8px;font-size:13.5px;color:#B7C9DF;text-decoration:none}
+.commcard__mail:hover{color:var(--yellow)}
+.commcard__hint{display:block;margin-top:12px;font-size:12px;color:#B7C9DF}
+.qrcard{margin-top:28px;padding-top:26px;border-top:1px solid rgba(255,255,255,.14);display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+.qrcard__code{flex:none;width:92px;height:92px;background:#fff;border-radius:10px;padding:8px;box-shadow:var(--sh)}
+.qrcard__code svg{display:block;width:100%;height:100%}
+.qrcard p{flex:1 1 180px;min-width:0;margin:0;font-size:12.5px;line-height:1.55;color:#B7C9DF}
+.qrcard a{color:inherit}
 
 .form{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:38px;box-shadow:var(--sh)}
 .fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
@@ -380,6 +393,12 @@ p{margin:0 0 1em}
 .formok{display:none;margin-top:20px;padding:18px 20px;border-left:4px solid #25D366;background:#F2FCF6;border-radius:var(--r);font-size:14.5px}
 .formok.is-on{display:block;animation:fade .4s var(--ease) both}
 .formok b{display:block;margin-top:6px;font-family:var(--display);font-size:13px;color:var(--blue)}
+.sendmode{display:flex;flex-wrap:wrap;gap:10px;margin-top:2px}
+.sendmode__opt{display:flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--line);
+  border-radius:var(--r);cursor:pointer;font-size:14px;color:var(--ink);transition:.25s var(--ease)}
+.sendmode__opt input{margin:0;accent-color:var(--blue)}
+.sendmode__opt:hover{border-color:var(--blue)}
+.sendmode__opt:has(input:checked){border-color:var(--blue);background:rgba(18,58,107,.07);color:var(--blue);font-weight:600}
 
 /* --- 17. FOOTER --------------------------------------------------------- */
 .foot{background:var(--navy);color:#93AAC7;padding-block:72px 0}
@@ -531,7 +550,7 @@ p{margin:0 0 1em}
   <a href="#formation">Formation</a>
   <a href="#contact">Contact</a>
   <a class="btn" href="#devis">Demander un devis</a>
-  <div class="drawer__c">+237 651 735 628<br>Prestations@hubtech_industrie.com</div>
+  <div class="drawer__c">+237 651 735 628<br>prestations@hubtechindustrie.com<br>support@hubtechindustrie.com</div>
 </aside>
 
 <main id="main">
@@ -1293,11 +1312,29 @@ p{margin:0 0 1em}
         <h3>Nous joindre</h3>
         <dl>
           <div><dt>WhatsApp &amp; téléphone</dt><dd><a href="tel:+237651735628">+237 651 735 628</a></dd></div>
-          <div><dt>Adresse e-mail</dt><dd><a href="mailto:Prestations@hubtech_industrie.com">Prestations@hubtech_industrie.com</a></dd></div>
+          <div><dt>Adresse e-mail</dt><dd><a href="mailto:prestations@hubtechindustrie.com">prestations@hubtechindustrie.com</a><br><a href="mailto:support@hubtechindustrie.com">support@hubtechindustrie.com</a></dd></div>
           <div><dt>Zone d'intervention</dt><dd>Cameroun et sous-région</dd></div>
           <div><dt>Horaires</dt><dd>Lundi – Samedi · 7h30 – 18h00</dd></div>
         </dl>
+
+        <div class="commcard">
+          <span class="commcard__label">Service communication &amp; management</span>
+          <a class="commcard__tel" href="tel:+237699958089">
+            <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2m5.52 12.32c-.25-.12-1.46-.72-1.69-.8-.22-.09-.39-.13-.55.12-.16.25-.63.8-.77.96-.14.16-.28.19-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.28.37-.42.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.55-1.34-.76-1.83-.2-.48-.4-.42-.55-.43h-.47c-.16 0-.42.06-.64.31-.22.25-.84.82-.84 2s.86 2.32.98 2.48c.12.17 1.7 2.59 4.11 3.63.58.25 1.02.4 1.37.51.58.18 1.1.16 1.51.1.46-.07 1.46-.6 1.66-1.17.21-.58.21-1.07.14-1.17-.06-.11-.22-.17-.47-.29"/></svg>
+            +237 699 958 089
+          </a>
+          <a class="commcard__mail" href="mailto:support@hubtechindustrie.com">support@hubtechindustrie.com</a>
+          <span class="commcard__hint">Cliquez sur le numéro pour appeler directement notre service communication &amp; management.</span>
+        </div>
+
         <a class="btn btn--wa" href="https://wa.me/237651735628?text=Bonjour%20HUBTECH%20INDUSTRIE%2C%20je%20souhaite%20obtenir%20des%20informations%20concernant%20vos%20services." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+
+        <div class="qrcard">
+          <a class="qrcard__code" href="https://wa.me/message/LXPCNGIRH4OQJ1" target="_blank" rel="noopener" aria-label="Ouvrir la conversation WhatsApp HUBTECH INDUSTRIE">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" shape-rendering="crispEdges" role="img" aria-label="QR code WhatsApp HUBTECH INDUSTRIE"><path fill="#FFFFFF" d="M0 0h31v31H0z"/><path stroke="#0B2545" d="M1 1.5h7m1 0h1m1 0h2m3 0h3m1 0h2m1 0h7M1 2.5h1m5 0h1m1 0h1m2 0h2m1 0h2m2 0h1m1 0h1m1 0h1m5 0h1M1 3.5h1m1 0h3m1 0h1m3 0h1m1 0h4m1 0h3m2 0h1m1 0h3m1 0h1M1 4.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h1m3 0h3m3 0h1m1 0h3m1 0h1M1 5.5h1m1 0h3m1 0h1m2 0h1m3 0h1m3 0h1m1 0h2m1 0h1m1 0h3m1 0h1M1 6.5h1m5 0h1m2 0h2m3 0h1m3 0h3m1 0h1m5 0h1M1 7.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 8.5h1m2 0h1m1 0h2M1 9.5h1m1 0h2m1 0h3m2 0h1m2 0h2m1 0h2m1 0h1m2 0h1m2 0h1m1 0h2M2 10.5h2m4 0h1m2 0h1m4 0h3m1 0h6m3 0h1M2 11.5h1m2 0h4m1 0h1m2 0h1m1 0h2m1 0h2m2 0h1m4 0h2M1 12.5h2m2 0h2m2 0h2m1 0h1m1 0h3m1 0h1m2 0h5m3 0h1M1 13.5h3m1 0h1m1 0h1m1 0h1m2 0h1m9 0h1m3 0h2M3 14.5h2m1 0h1m1 0h2m3 0h2m5 0h1m2 0h1m3 0h3M1 15.5h2m3 0h2m2 0h1m4 0h1m4 0h3m2 0h1m1 0h3M3 16.5h1m9 0h2m1 0h1m1 0h2m3 0h2m3 0h1M1 17.5h1m1 0h1m3 0h1m3 0h1m1 0h1m4 0h2m1 0h2m1 0h3m1 0h1M2 18.5h1m1 0h3m4 0h2m1 0h1m3 0h1m2 0h1m4 0h3M1 19.5h1m1 0h1m3 0h2m1 0h1m5 0h2m3 0h1m1 0h3m1 0h1M4 20.5h2m2 0h1m1 0h3m5 0h5m1 0h1m2 0h1M2 21.5h1m1 0h2m1 0h5m2 0h1m1 0h12M9 22.5h3m2 0h2m4 0h2m3 0h5M1 23.5h7m1 0h1m4 0h1m2 0h2m1 0h2m1 0h1m1 0h2m1 0h1M1 24.5h1m5 0h1m1 0h4m4 0h1m1 0h1m1 0h1m3 0h2m1 0h2M1 25.5h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m3 0h5m1 0h1M1 26.5h1m1 0h3m1 0h1m1 0h2m4 0h1m4 0h1m1 0h1m1 0h3m1 0h1M1 27.5h1m1 0h3m1 0h1m1 0h1m1 0h2m1 0h3m2 0h2m3 0h1m2 0h1m1 0h1M1 28.5h1m5 0h1m5 0h1m1 0h2m3 0h2m2 0h1m1 0h1m1 0h1M1 29.5h7m1 0h1m2 0h3m3 0h1m1 0h3m3 0h1m1 0h1"/></svg>
+          </a>
+          <p>Sur ordinateur ? Scannez ce code avec l'appareil photo de votre téléphone pour ouvrir directement notre WhatsApp, ou <a href="https://wa.me/message/LXPCNGIRH4OQJ1" target="_blank" rel="noopener">cliquez ici</a>.</p>
+        </div>
       </aside>
 
       <div class="form rv" data-d="1">
@@ -1372,14 +1409,27 @@ p{margin:0 0 1em}
               <textarea id="f-msg" name="message" required placeholder="Nature des travaux, surface, puissance, contraintes du site…"></textarea>
               <span class="err">Décrivez brièvement votre besoin.</span>
             </div>
+            <div class="field field--full">
+              <label>Envoyer ma demande par <b>*</b></label>
+              <div class="sendmode" role="radiogroup" aria-label="Mode d'envoi de la demande">
+                <label class="sendmode__opt">
+                  <input type="radio" name="canal" value="whatsapp" checked>
+                  <span>WhatsApp</span>
+                </label>
+                <label class="sendmode__opt">
+                  <input type="radio" name="canal" value="email">
+                  <span>E-mail</span>
+                </label>
+              </div>
+            </div>
           </div>
           <button class="btn" type="submit">Envoyer ma demande
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/></svg>
           </button>
-          <p class="form__note">Votre demande est transmise via WhatsApp pour une réponse plus rapide. La pièce jointe n'est pas envoyée automatiquement : joignez-la dans la conversation ou par e-mail.</p>
+          <p class="form__note">Selon le mode choisi ci-dessus, la conversation WhatsApp s'ouvre directement, ou votre messagerie s'ouvre avec l'e-mail pré-rempli à destination de prestations@hubtechindustrie.com. La pièce jointe n'est pas envoyée automatiquement : joignez-la dans la conversation ou dans l'e-mail.</p>
         </form>
         <div class="formok" id="formOk">
-          Demande préparée. La conversation WhatsApp s'ouvre dans un nouvel onglet — il ne reste qu'à envoyer le message.
+          <span id="formOkMsg">Demande préparée. La conversation WhatsApp s'ouvre dans un nouvel onglet — il ne reste qu'à envoyer le message.</span>
           <b id="refNo"></b>
         </div>
       </div>
@@ -1440,7 +1490,8 @@ p{margin:0 0 1em}
         <ul>
           <li>WhatsApp : <a href="https://wa.me/237651735628" target="_blank" rel="noopener">+237 651 735 628</a></li>
           <li>Téléphone : <a href="tel:+237651735628">+237 651 735 628</a></li>
-          <li>E-mail :<br><a href="mailto:Prestations@hubtech_industrie.com">Prestations@hubtech_industrie.com</a></li>
+          <li>Communication &amp; management : <a href="tel:+237699958089">+237 699 958 089</a></li>
+          <li>E-mail :<br><a href="mailto:prestations@hubtechindustrie.com">prestations@hubtechindustrie.com</a><br><a href="mailto:support@hubtechindustrie.com">support@hubtechindustrie.com</a></li>
           <li>Cameroun · Littoral</li>
           <li>Lundi – Samedi · 7h30 – 18h00</li>
         </ul>
@@ -1611,7 +1662,9 @@ p{margin:0 0 1em}
   /* --- 8. Formulaire de devis -------------------------------------------- */
   var form = document.getElementById("quoteForm"),
       ok = document.getElementById("formOk"),
-      refNo = document.getElementById("refNo");
+      okMsg = document.getElementById("formOkMsg"),
+      refNo = document.getElementById("refNo"),
+      MAIL_TO = "prestations@hubtechindustrie.com";
 
   function mark(input, on){ input.closest(".field").classList.toggle("has-error", on); }
   function isMail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
@@ -1653,7 +1706,17 @@ p{margin:0 0 1em}
       "", "Description :", f.message.value.trim()
     ].filter(Boolean);
 
-    open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(lines.join("\n")), "_blank", "noopener");
+    var canal = (f.canal && f.canal.value) || "whatsapp";
+    var body = lines.join("\n");
+
+    if (canal === "email"){
+      location.href = "mailto:" + MAIL_TO + "?subject=" + encodeURIComponent("Nouvelle demande de devis — " + r) + "&body=" + encodeURIComponent(body);
+      okMsg.textContent = "Demande préparée. Votre messagerie s'ouvre avec l'e-mail pré-rempli — il ne reste qu'à l'envoyer.";
+    } else {
+      open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(body), "_blank", "noopener");
+      okMsg.textContent = "Demande préparée. La conversation WhatsApp s'ouvre dans un nouvel onglet — il ne reste qu'à envoyer le message.";
+    }
+
     refNo.textContent = "Référence de votre demande : " + r;
     ok.classList.add("is-on");
     ok.scrollIntoView({block:"center", behavior: reduce ? "auto":"smooth"});
